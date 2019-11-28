@@ -1,0 +1,164 @@
+{
+  "id": "0b206e08-9716-4cfb-adfd-913b9e21eb58",
+  "version": "2.0",
+  "name": "Automatizacion_Militzai",
+  "url": "https://www.falabella.com",
+  "tests": [{
+    "id": "be1bfd02-3875-44fb-b8a1-956f089008f8",
+    "name": "ADD_Product",
+    "commands": [{
+      "id": "cffade00-9f18-4cd6-ac40-dd9898d1c33f",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.falabella.com/falabella-cl/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e082609e-8ab5-490c-b5a5-edd170eb3c30",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4efae80e-bafe-4a2b-9e5f-20ef7048c1fe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.HamburgerIcon_hamburgerContain__1BOAJ",
+      "targets": [
+        ["css=.HamburgerIcon_hamburgerContain__1BOAJ", "css:finder"],
+        ["xpath=//div[@id='hamburgerMenu']/div", "xpath:idRelative"],
+        ["xpath=//div/section[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0e4330a-6d45-4fb3-8c37-b90d82adc5b2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#item-1 > .FirstLevelItems_menuText__UYB9A",
+      "targets": [
+        ["css=#item-1 > .FirstLevelItems_menuText__UYB9A", "css:finder"],
+        ["xpath=//li[@id='item-1']/div", "xpath:idRelative"],
+        ["xpath=//li[7]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91d80c0a-974b-40fa-aee4-8071287e0b1a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Consolas",
+      "targets": [
+        ["linkText=Consolas", "linkText"],
+        ["css=.SecondLevelItems_displaySubMenuDesktop__33Gpt .SecondLevelItems_detailsElements__36uYN:nth-child(5) .ThirdLevelItems_listElements__ZcR7D:nth-child(2) > .ThirdLevelItems_submenuElementLi__n49I5", "css:finder"],
+        ["xpath=//a[contains(text(),'Consolas')]", "xpath:link"],
+        ["xpath=//header[@id='header']/nav/div/div/div/div/section/div/section[2]/div/div/ul[5]/div[2]/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/falabella-cl/category/cat3770004/Consolas')]", "xpath:href"],
+        ["xpath=//ul[5]/div[2]/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Consolas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b11dedda-0825-4615-8b44-ca67a101e546",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.jsx-2736828475:nth-child(3) .multiselect",
+      "targets": [
+        ["css=.jsx-2736828475:nth-child(3) .multiselect", "css:finder"],
+        ["xpath=//div[@id='testId--desktop-container']/div/ul/li[3]/div/ul", "xpath:idRelative"],
+        ["xpath=//li[3]/div/ul", "xpath:position"]
+      ],
+      "value": "269.5,174.875"
+    }, {
+      "id": "3b4eb8e9-6a35-46d2-9194-71b79f7f16cd",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.jsx-2736828475:nth-child(3) .multiselect",
+      "targets": [
+        ["css=.jsx-2736828475:nth-child(3) .multiselect", "css:finder"],
+        ["xpath=//div[@id='testId--desktop-container']/div/ul/li[3]/div/ul", "xpath:idRelative"],
+        ["xpath=//li[3]/div/ul", "xpath:position"]
+      ],
+      "value": "269.5,174.875"
+    }, {
+      "id": "9736c3b6-3c26-4606-a851-d2e7901ed66c",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.jsx-2736828475:nth-child(3) .multiselect",
+      "targets": [
+        ["css=.jsx-2736828475:nth-child(3) .multiselect", "css:finder"],
+        ["xpath=//div[@id='testId--desktop-container']/div/ul/li[3]/div/ul", "xpath:idRelative"],
+        ["xpath=//li[3]/div/ul", "xpath:position"]
+      ],
+      "value": "269.5,174.875"
+    }, {
+      "id": "6ed18dbd-2403-4041-8e90-89caa1fbba81",
+      "comment": "",
+      "command": "click",
+      "target": "css=#testId-Accordion-Marca .jsx-4008065441",
+      "targets": [
+        ["css=#testId-Accordion-Marca .jsx-4008065441", "css:finder"],
+        ["xpath=//button[@id='testId-Accordion-Marca']/div/div/h2", "xpath:idRelative"],
+        ["xpath=//li[4]/button/div/div/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Marca')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0205301d-7909-4318-a9bc-d37a6aa11301",
+      "comment": "",
+      "command": "click",
+      "target": "css=#testId-Pod-action-7314614",
+      "targets": [
+        ["id=testId-Pod-action-7314614", "id"],
+        ["css=#testId-Pod-action-7314614", "css:finder"],
+        ["xpath=//button[@id='testId-Pod-action-7314614']", "xpath:attributes"],
+        ["xpath=//div[@id='testId-pod-7314614']/a/div[2]/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'VER PRODUCTO')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cf05546-6f87-432b-b5da-3820168c01d6",
+      "comment": "",
+      "command": "doubleClickAt",
+      "target": "css=.fb-quantity-input__plus",
+      "targets": [
+        ["css=.fb-quantity-input__plus", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='fbra_browseMainProduct']/div/div/div[2]/div/div[8]/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'+')]", "xpath:innerText"]
+      ],
+      "value": "3"
+    }, {
+      "id": "3a3055ea-e668-49e2-939b-47dac21675f5",
+      "comment": "",
+      "command": "assertValue",
+      "target": "name=quantity1",
+      "targets": [
+        ["name=quantity1", "name"],
+        ["css=.fb-quantity-input__field", "css:finder"],
+        ["xpath=//input[@name='quantity1']", "xpath:attributes"],
+        ["xpath=//div[@id='fbra_browseMainProduct']/div/div/div[2]/div/div[8]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "da482483-b3cc-48bf-958f-e7878d800994",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0146aad6-7ec1-4f60-839c-96cba6fe64ec",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["be1bfd02-3875-44fb-b8a1-956f089008f8"]
+  }],
+  "urls": ["https://www.falabella.com/"],
+  "plugins": []
+}
