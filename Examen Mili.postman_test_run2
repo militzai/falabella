@@ -1,0 +1,131 @@
+{
+	"id": "bd2313ce-5b9b-412a-a92f-6bc4043ff2b1",
+	"name": "Examen Mili",
+	"allTests": [],
+	"timestamp": "2019-11-29T05:01:56.968Z",
+	"collection_id": "26f07b94-fded-4e49-bb66-85648ab6bb9c",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "0",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "26f07b94-fded-4e49-bb66-85648ab6bb9c",
+		"name": "Examen Mili",
+		"order": [
+			"0874e59b-fcbf-42ad-b2f1-c5dded50eadb",
+			"7aaea417-6bb6-43c2-8d90-bbf2eca80958",
+			"e25a21f7-8379-46b3-b2bb-175e9927a077"
+		],
+		"folders_order": [],
+		"isFavorite": false
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [
+		{
+			"key": "event.ani",
+			"value": "",
+			"enabled": false
+		},
+		{
+			"key": "token",
+			"value": "c70267ee-4504-4cf4-93f6-ba85603e523e",
+			"enabled": true
+		}
+	],
+	"results": [
+		{
+			"name": "https://api.github.com//gists/:gist_id/comments",
+			"id": "7aaea417-6bb6-43c2-8d90-bbf2eca80958",
+			"url": "https://api.github.com/gists/1/comments",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Body matches string": true,
+				"Successful POST request": true,
+				"Response time is less than 500ms": true,
+				"Validar estructura Json": true
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validar estructura Json": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"216"
+			],
+			"allTests": [
+				{
+					"Body matches string": true,
+					"Successful POST request": true,
+					"Response time is less than 500ms": true,
+					"Validar estructura Json": true
+				}
+			],
+			"time": "216",
+			"totalRequestTime": "216",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 4,
+	"totalFail": 0,
+	"totalTime": 216,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "https://api.github.com//gists/:gist_id/comments",
+			"id": "7aaea417-6bb6-43c2-8d90-bbf2eca80958",
+			"url": "https://api.github.com/gists/1/comments",
+			"time": "2019-11-29T05:01:56.968Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validar estructura Json": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}

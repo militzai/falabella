@@ -1,0 +1,266 @@
+{
+	"info": {
+		"_postman_id": "26f07b94-fded-4e49-bb66-85648ab6bb9c",
+		"name": "Examen Mili",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://api.github.com/gists/:gist_id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d060f070-1fb8-49c0-8374-1d7925dd55a9",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": " application/vnd.github.v3+json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "token d502413debe3d129135ac211b3c997577ee78d99",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "requestTimestamp",
+						"value": "YYYY-MM-DDTHH:MM:SSZ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.github.com/gists/:gist_id",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"gists",
+						":gist_id"
+					],
+					"variable": [
+						{
+							"key": "gist_id",
+							"value": "33"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.github.com//gists/:gist_id/comments",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7a95a1b4-eac8-45e5-acad-e8d7996d83fb",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"874312\");",
+							"});",
+							"pm.test(\"Successful POST request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200,201,202]);",
+							"});",
+							"pm.test(\"Response time is less than 500ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);",
+							"});",
+							"",
+							"var expectedJsonBody =",
+							"    {",
+							"        \"url\": \"https://api.github.com/gists/1/comments/32714\",",
+							"        \"id\": 32714,",
+							"        \"node_id\": \"MDExOkdpc3RDb21tZW50MTozMjcxNA==\",",
+							"        \"user\": {",
+							"            \"login\": \"edison\",",
+							"            \"id\": 149353,",
+							"            \"node_id\": \"MDQ6VXNlcjE0OTM1Mw==\",",
+							"            \"avatar_url\": \"https://avatars0.githubusercontent.com/u/149353?v=4\",",
+							"            \"gravatar_id\": \"\",",
+							"            \"url\": \"https://api.github.com/users/edison\",",
+							"            \"html_url\": \"https://github.com/edison\",",
+							"            \"followers_url\": \"https://api.github.com/users/edison/followers\",",
+							"            \"following_url\": \"https://api.github.com/users/edison/following{/other_user}\",",
+							"            \"gists_url\": \"https://api.github.com/users/edison/gists{/gist_id}\",",
+							"            \"starred_url\": \"https://api.github.com/users/edison/starred{/owner}{/repo}\",",
+							"            \"subscriptions_url\": \"https://api.github.com/users/edison/subscriptions\",",
+							"            \"organizations_url\": \"https://api.github.com/users/edison/orgs\",",
+							"            \"repos_url\": \"https://api.github.com/users/edison/repos\",",
+							"            \"events_url\": \"https://api.github.com/users/edison/events{/privacy}\",",
+							"            \"received_events_url\": \"https://api.github.com/users/edison/received_events\",",
+							"            \"type\": \"User\",",
+							"            \"site_admin\": false",
+							"        },",
+							"        \"author_association\": \"NONE\",",
+							"        \"created_at\": \"2011-05-26T08:11:33Z\",",
+							"        \"updated_at\": \"2011-05-26T08:11:33Z\",",
+							"        \"body\": \"lol\\n\"",
+							"    }",
+							"pm.test(\"Validar estructura Json\", JSON.stringify(expectedJsonBody));"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "cb7c043d-9998-44b9-8ec0-8b091205c571",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": " application/vnd.github.v3+json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "token d502413debe3d129135ac211b3c997577ee78d99",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "requestTimestamp",
+						"value": "YYYY-MM-DDTHH:MM:SSZ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.github.com/gists/:gist_id/comments?",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"gists",
+						":gist_id",
+						"comments"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					],
+					"variable": [
+						{
+							"key": "gist_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.github.com/gists/:gist_id/comments_body",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "03650a24-80ca-4896-a4e8-c93bb1c3f20c",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"874312\");",
+							"});",
+							"pm.test(\"Response time is less than 500ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);",
+							"});",
+							"pm.test(\"Body is correct\", function () {",
+							"    pm.response.to.have.body({",
+							"  \"body\": \"\"",
+							"}",
+							");",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": " application/vnd.github.v3+json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "token d502413debe3d129135ac211b3c997577ee78d99",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "requestTimestamp",
+						"value": "YYYY-MM-DDTHH:MM:SSZ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.github.com/gists/:gist_id/comments",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"gists",
+						":gist_id",
+						"comments"
+					],
+					"variable": [
+						{
+							"key": "gist_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
