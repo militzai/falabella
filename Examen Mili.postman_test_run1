@@ -1,0 +1,99 @@
+{
+	"id": "09ec5184-3074-4a39-9f9e-856cd990e6b2",
+	"name": "Examen Mili",
+	"allTests": [],
+	"timestamp": "2019-11-29T02:01:24.763Z",
+	"collection_id": "26f07b94-fded-4e49-bb66-85648ab6bb9c",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "0",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "26f07b94-fded-4e49-bb66-85648ab6bb9c",
+		"name": "Examen Mili",
+		"order": [
+			"c0d9202c-6b33-4c0b-b7d0-227ab50765ec"
+		],
+		"folders_order": [],
+		"isFavorite": false
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [
+		{
+			"key": "event.ani",
+			"value": "",
+			"enabled": false
+		},
+		{
+			"key": "token",
+			"value": "c70267ee-4504-4cf4-93f6-ba85603e523e",
+			"enabled": true
+		}
+	],
+	"results": [
+		{
+			"name": "https://api.github.com/gists/:gist_id?requestTimestamp=YYYY-MM-DDTHH:MM:SSZ",
+			"id": "c0d9202c-6b33-4c0b-b7d0-227ab50765ec",
+			"url": "https://api.github.com/gists/45?requestTimestamp=YYYY-MM-DDTHH:MM:SSZ",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"283"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "283",
+			"totalRequestTime": "283",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 1,
+	"totalFail": 0,
+	"totalTime": 283,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "https://api.github.com/gists/:gist_id?requestTimestamp=YYYY-MM-DDTHH:MM:SSZ",
+			"id": "c0d9202c-6b33-4c0b-b7d0-227ab50765ec",
+			"url": "https://api.github.com/gists/45?requestTimestamp=YYYY-MM-DDTHH:MM:SSZ",
+			"time": "2019-11-29T02:01:24.763Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}
